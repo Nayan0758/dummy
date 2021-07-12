@@ -10,6 +10,5 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="dummyrepoFlow" doc:id="e5625402-7bf6-43de-9e69-b279bdd8cbe5" >
 		<http:listener doc:name="Listener" doc:id="7235f980-3e94-4abc-ae41-536fb1ca2acc" config-ref="HTTP_Listener_config" path="/dummy"/>
 		<set-payload value='#["Hello This is just demo!"]' doc:name="Set Payload" doc:id="4931ba62-0ed2-4966-919b-f4be302dbf1c" />
-		<logger level="INFO" doc:name="Logger" doc:id="65f474b6-967e-4e1a-b534-fc90b7cf7a24" message="#[payload]"/>
 	</flow>
 </mule>
